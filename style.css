@@ -44,7 +44,7 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
-.car-btn{
+.carousel .car-btn{
     position: absolute;
     z-index: 999;
     font-size: 60px;
@@ -54,16 +54,16 @@ body{
     cursor: pointer;
     transition: background 0.2s ease;
 }
-.car-btn:hover{
+.carousel .car-btn:hover{
     font-size: 62px;
     color: rgb(178, 174, 174);
     background-color: #fff;
 }
-.car-btn:active{
+.carousel .car-btn:active{
     background-color: rgb(178, 174, 174);
     color: #fff;
 }
-.next{
+.carousel .next{
     right: 0;
 }
 
