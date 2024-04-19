@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(201,212,58,1) 0%, rgba(50,212,194,1) 60%);
+    min-height: 110vh;
+}
+
+.carousel{
+    position: relative;
+    width: 500px;
+    height: 85vh;
+    
+}
+.car-item{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 110%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 3px 25px 0px rgba(0,0,0,0.50);
+    display: none;
+    opacity: 0;
+    
+}
+.car-img img{
+    padding-top: 10px;
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.car-dec{
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.car-btn{
+    position: absolute;
+    z-index: 999;
+    font-size: 60px;
+    top: 50%;
+    color: rgb(255, 247, 247);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.car-btn:hover{
+    font-size: 62px;
+    color: rgb(178, 174, 174);
+    background-color: #fff;
+}
+.car-btn:active{
+    background-color: rgb(178, 174, 174);
+    color: #fff;
+}
+.next{
+    right: 37%;
+}
+
+.dots{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.dots .dot{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 3px solid #000000;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot:active{
+    background-color: rgb(16, 15, 15);
+    border: 3px solid #fff;
+}
+.active{
+    opacity: 1;
+    display: block;
+}
+.dots .dot.active {
+    background-color: black;
+    border: 3px solid #fff;
+}
+
+
