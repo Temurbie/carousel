@@ -9,24 +9,25 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, rgba(201,212,58,1) 0%, rgba(50,212,194,1) 60%);
-    min-height: 110vh;
+    min-height: 100vh;
 }
-
+ 
 .carousel{
     position: relative;
     width: 500px;
-    height: 85vh;
-    
-}
-.car-item{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 110%;
+    height: 850px;
     background-color: #fff;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 3px 25px 0px rgba(0,0,0,0.50);
+   
+    
+}
+
+.car-item{
+    position: absolute;
+    inset: 0;
+    width: 100%;
     display: none;
     opacity: 0;
     
@@ -39,7 +40,7 @@ body{
     object-position: center;
 }
 .car-dec{
-    padding-top: 30px;
+    padding: 30px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -48,6 +49,7 @@ body{
     z-index: 999;
     font-size: 60px;
     top: 50%;
+    transform: translateX(-50% , -50%);
     color: rgb(255, 247, 247);
     cursor: pointer;
     transition: background 0.2s ease;
@@ -62,12 +64,12 @@ body{
     color: #fff;
 }
 .next{
-    right: 37%;
+    right: 0;
 }
 
 .dots{
     position: absolute;
-    bottom: 70px;
+    bottom: 170px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
